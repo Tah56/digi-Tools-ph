@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "A beginner-friendly resume builder package for students and fresh graduates.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "25+ resume templates",
+      "ATS optimization",
+      "Export to PDF"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume creation tool with premium templates and career-focused suggestions.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ premium templates",
+      "AI content suggestions",
+      "Cover letter builder"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Plan",
+    "description": "Complete package for job seekers with resume, cover letter, and LinkedIn profile support.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited resumes",
+      "LinkedIn profile tips",
+      "Priority support"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Website Pack",
+    "description": "A modern portfolio website bundle for developers and designers.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "10+ portfolio templates",
+      "Responsive design",
+      "Easy customization"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Toolkit",
+    "description": "Essential templates and resources for freelancers to manage proposals and invoices.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Proposal templates",
+      "Invoice generator",
+      "Client management sheets"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Interview Prep Bundle",
+    "description": "A practical bundle designed to help candidates prepare for technical and HR interviews.",
+    "price": 29,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "100+ interview questions",
+      "Mock interview guides",
+      "Answer frameworks"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Job Hunter Premium",
+    "description": "A subscription plan with premium job search tools and personalized application tracking.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Application tracker",
+      "Job alerts",
+      "Interview scheduling"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Ultimate Career Suite",
+    "description": "An all-in-one yearly subscription for resumes, portfolios, interview prep, and job tracking.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Resume + portfolio builder",
+      "Interview prep resources",
+      "Unlimited exports"
+    ]
+  }
+]
