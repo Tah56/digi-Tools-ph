@@ -40,7 +40,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent text-3xl font-extrabold">DigiTools</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-5 cursor-pointer">
@@ -61,13 +61,13 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end space-x-5">
+        <div className="navbar-end space-x-5  ">
 
             <div className="relative">
                 <ShoppingCartIcon></ShoppingCartIcon>
                 <span className="absolute -top-3 left-1/2 font-bold text-red-400"></span>
             </div>
-            <button className="btn btn-ghost"> Login</button>
+            <button className="btn btn-ghost "> Login</button>
           <a className="btn rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white font-semibold ">Get Started</a>
         </div>
       </div>

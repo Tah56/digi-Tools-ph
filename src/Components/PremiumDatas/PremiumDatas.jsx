@@ -8,7 +8,7 @@ const PremiumDatas = ({cardData}) => {
     
     
     return (
-        <div className='grid grid-cols-3 place-items-center items-center justify-center space-y-5'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 place-items-center items-center justify-center space-y-5'>
            {
             prm.map(data => <PremiumCard key={data.id} data={data}></PremiumCard> )
            }
