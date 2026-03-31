@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="max-w-11/12 w-full mx-auto">
-      <div className="navbar bg-base-100 shadow-sm">
-        <div className="navbar-start">
+    <div className="">
+      <div className="navbar bg-base-100 shadow-sm   px-20 ">
+        <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg

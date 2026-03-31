@@ -1,23 +1,16 @@
 import React, { use } from 'react';
+import PremiumCard from './PremiumCard';
 
 const PremiumDatas = ({cardData}) => {
     
     const prm = use(cardData)
-    console.log(prm);
+   
     
     
     return (
-        <div className='grid grid-cols-3 place-items-center items-center justify-center'>
+        <div className='grid grid-cols-3 place-items-center items-center justify-center space-y-5'>
            {
-            prm.map(data =>{
-              return  (
-                <div className='border'>
-
-                    <h2>{data.name}</h2>
-                </div>
-
-              )
-            })
+            prm.map(data => <PremiumCard key={data.id} data={data}></PremiumCard> )
            }
         </div>
     );
