@@ -1,21 +1,23 @@
 
-import { ToastContainer } from 'react-toastify'
+import { Slide, ToastContainer } from 'react-toastify'
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Premium from './Components/PremiumSection/Premium'
 import HeroSection from './Components/HeroSection/HeroSection'
 import RatingSection from './Components/Rating/RatingSection'
+import { useState } from 'react'
 
 function App() {
- 
+     const [cart,setCart]=useState([])
+
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar cart={cart}></Navbar>
       <HeroSection></HeroSection>
       <RatingSection></RatingSection>
-      <Premium></Premium>
-      <ToastContainer></ToastContainer>
+      <Premium cart={cart} setCart={setCart}></Premium>
+      <ToastContainer transition={Slide}></ToastContainer>
     </>
   )
 }

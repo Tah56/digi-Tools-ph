@@ -1,7 +1,7 @@
 import React, { use } from 'react';
 import PremiumCard from './PremiumCard';
 
-const PremiumDatas = ({cardData}) => {
+const PremiumDatas = ({cardData, cart , setCart}) => {
     
     const prm = use(cardData)
    
@@ -10,7 +10,7 @@ const PremiumDatas = ({cardData}) => {
     return (
         <div className='grid md:grid-cols-2 lg:grid-cols-3 place-items-center items-center justify-center space-y-5'>
            {
-            prm.map(data => <PremiumCard key={data.id} data={data}></PremiumCard> )
+            prm.map(data => <PremiumCard cart={cart} setCart={setCart} key={data.id} data={data}></PremiumCard> )
            }
         </div>
     );

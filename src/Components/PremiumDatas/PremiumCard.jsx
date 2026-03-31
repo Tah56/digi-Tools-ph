@@ -1,8 +1,12 @@
 import React from "react";
 import { toast } from "react-toastify";
 
-const PremiumCard = ({data}) => {
-  console.log(data);
+const PremiumCard = ({data, cart ,setCart}) => {
+
+  const handleCart = ()=>{
+    setCart([...cart,data])
+    toast.success(`${data.name} is added to cart`)
+  }
   
   return (
     <div>
@@ -72,7 +76,7 @@ const PremiumCard = ({data}) => {
            
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary btn-block" onClick={()=>{toast.success(`${data.price}$ Cart is selected`)}}>Subscribe</button>
+            <button className="btn btn-primary btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA]" onClick={handleCart}>Buy Now</button>
           </div>
         </div>
       </div>

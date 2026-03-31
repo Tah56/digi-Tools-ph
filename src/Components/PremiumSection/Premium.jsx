@@ -10,7 +10,7 @@ const premiumData = async() =>{
     return data
 }
 
-const Premium = () => {
+const Premium = ({cart,setCart}) => {
     const cardData = premiumData()
     const [status,setStatus]=useState("products")
     return (
@@ -23,7 +23,7 @@ const Premium = () => {
             <div className=' w-50 mx-auto rounded-2xl my-10 '>
                 <button onClick={()=>{setStatus("products")}} className={`btn btn-ghost rounded-2xl ${status === "products"? 'bg-[#9514FA]   text-white':""}`}
                 >products</button>
-                <button onClick={()=>{setStatus('cart')}} className={`btn btn-ghost rounded-2xl ${status === "cart"? 'bg-[#9514FA] shadow-md text-white':""}`}>card (0)</button>
+                <button onClick={()=>{setStatus('cart')}} className={`btn btn-ghost rounded-2xl ${status === "cart"? 'bg-[#9514FA] shadow-md text-white':""}`}>card ({cart.length})</button>
             </div>
        
           
@@ -35,8 +35,8 @@ const Premium = () => {
             </div>
             }>
 
-            <PremiumDatas cardData={cardData}></PremiumDatas>
-            </Suspense>: <CartSetcion></CartSetcion>}
+            <PremiumDatas cardData={cardData} cart={cart} setCart={setCart}></PremiumDatas>
+            </Suspense>: <CartSetcion cart={cart} setCart={setCart}></CartSetcion>}
             
         </div>
     );
