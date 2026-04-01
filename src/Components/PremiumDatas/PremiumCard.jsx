@@ -1,5 +1,8 @@
 import React from "react";
 import { toast } from "react-toastify";
+import img1 from "../../assets/products/writing_2327400 1.png"
+import img2 from "../../assets/products/portfolio.png"
+import img3 from "../../assets/products/social-media.png"
 
 const PremiumCard = ({data, cart ,setCart}) => {
 
@@ -12,7 +15,11 @@ const PremiumCard = ({data, cart ,setCart}) => {
     <div>
       <div className="card max-w-96  bg-base-100 shadow-sm ">
         <div className="card-body">
+          <div className="flex items-center justify-between">
+
+          <img src={ data.tag === "popular"?img2:data.tag === "new"? img3:img1} alt="" />
           <h2 className={`${data.tag === "new" ? ' text-[#0A883E] bg-[#DBFCE7]': data.tag === "popular"? " text-[#9514FA] bg-[#E1E7FF]":"bg-[#FEF3C6] text-[#BB4D00]"}  px-3 py-1.5 w-24 font-medium rounded-2xl flex items-center justify-center text-center`}>{data.tag}</h2>
+          </div>
           <div className="flex justify-between">
             <h2 className="text-2xl font-bold">{data.name}</h2>
           </div>

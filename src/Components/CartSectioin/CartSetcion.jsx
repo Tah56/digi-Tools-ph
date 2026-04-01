@@ -9,6 +9,16 @@ const CartSetcion = ({ cart ,setCart }) => {
      setCart(cart.filter(( i,index)=> index!== id))
      toast.error("Item removed from cart")
   }
+  const checkout = (id)=>{
+    if(cart.length>0){
+
+      setCart(cart.filter((item)=> item.name === id ))
+      toast.success("oder placed successfull")
+      return
+    }
+    toast.warning("add item to cart first")
+
+  }
   console.log(cart.length);
   
 
@@ -21,7 +31,7 @@ const CartSetcion = ({ cart ,setCart }) => {
         <h2>Total:</h2>
         <span>${total} </span>
       </div>
-      <button className="btn w-full rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Proceed to Checkout</button>
+      <button onClick={()=>{checkout(cart.name)}} className="btn w-full rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Proceed to Checkout</button>
     </div>
   );
 };
