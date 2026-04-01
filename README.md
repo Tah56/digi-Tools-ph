@@ -1,16 +1,43 @@
-# React + Vite
+<h1 align="center">🛠️ DigitalTools</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A modern and responsive web application that showcases different subscription plans and digital products with cart functionality and toggle-based navigation.
+</p>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 About The Project
 
-## React Compiler
+**DigitalTools** is a frontend web application designed to display various digital subscription plans and products in a clean and interactive interface.  
+Users can easily switch between **Products** and **Cart** sections using a toggle button, explore available subscriptions, and enjoy a smooth, responsive browsing experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project demonstrates practical frontend concepts such as dynamic data rendering, reusable React components, state management, user interaction handling, and modern UI design.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Technologies Used
+
+- ⚛️ **React.js**
+- 🎨 **Tailwind CSS**
+- 🌼 **DaisyUI**
+- 🟨 **JavaScript (ES6+)**
+- 🔔 **React-Toastify**
+- 📦 **JSON** *(for product and subscription data)*
+
+---
+
+## ✨ Key Features
+
+- 🔄 **Toggle Navigation** – Easily switch between **Products** and **Cart** sections with a smooth toggle system.
+- 🛍️ **Dynamic Subscription & Product Display** – Render multiple subscription plans and digital products dynamically from JSON data.
+- 🔔 **Cart Interaction with Toast Notifications** – Add items to cart and get instant feedback using React-Toastify.
+
+---
+
+## 🛠️ Installation & Setup
+
+```bash
+git clone https://github.com/your-username/digitalTools.git
+cd digitalTools
+npm install
+npm run dev
