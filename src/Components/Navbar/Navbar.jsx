@@ -65,9 +65,9 @@ const Navbar = ({cart}) => {
 
             <div className="relative">
                 <ShoppingCartIcon></ShoppingCartIcon>
-                <span className="absolute -top-3 left-1/2 font-bold text-red-400">{cart.length===0?'':cart.length}</span>
+                <span className="absolute -top-3 left-1/2 font-extrabold text-md  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">{cart.length===0?'':cart.length}</span>
             </div>
-            <button className="btn btn-ghost "> Login</button>
+            <button className="btn btn-ghost hidden lg:flex "> Login</button>
           <a className="btn rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white font-semibold ">Get Started</a>
         </div>
       </div>
