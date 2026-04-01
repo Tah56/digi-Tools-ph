@@ -61,7 +61,7 @@ const Navbar = ({cart}) => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end space-x-5 hidden sm:flex ">
+        <div className="navbar-end space-x-5  ">
 
             <div className="relative">
                 <ShoppingCartIcon></ShoppingCartIcon>
