@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import TransparentCard from './TransparentCard';
 
 const fetchData =async()=>{
-    const res = await fetch("/public/transparentPricing.json")
+    const res = await fetch("/transparentPricing.json")
     const data =await res.json();
     
     return data
