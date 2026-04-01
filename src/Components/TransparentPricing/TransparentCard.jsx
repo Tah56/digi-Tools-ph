@@ -2,14 +2,14 @@ import React, { use } from 'react';
 
 const TransparentCard = ({fetch}) => {
     const carts = use(fetch)
-    console.log(carts);
+    
     
     return (
-        <div className='flex items-center gap-10'>
+        <div className='flex flex-col-reverse lg:flex-row items-center gap-10'>
              {
                 carts.map((cart)=>{
-                    return<div>
-                  <div className={`card max-w-96   ${ cart.tag ==="Most popular"&&"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"} bg-[#F9FAFC] shadow-sm rounded-2xl`}>
+                    return<div key={cart.id}>
+                  <div  className={`card max-w-96    ${ cart.tag ==="Most popular"&&"bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"} bg-[#F9FAFC] shadow-sm rounded-2xl`}>
                     <div className="card-body">
                       <div className="flex items-center justify-between">
             

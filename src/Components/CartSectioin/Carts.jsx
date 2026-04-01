@@ -9,8 +9,8 @@ const Carts = ({cart , totalFilter}) => {
         <div>
             {
                 cart.map((items,index)=>{
-                    return <div key={index} className='flex items-center justify-between bg-[#F9FAFC] p-10 mb-5 '>
-                        <div className='flex gap-3'>
+                    return <div key={index} className='flex flex-col lg:flex-row items-center justify-between gap-5 bg-[#F9FAFC] p-10 mb-5 '>
+                        <div className='flex  gap-3'>
                             <div className='w-12 h-12  rounded-full drop-shadow-xl bg-white p-2 flex items-center justify-center'>
 
                             <img className='w-full' src={items.tag === "popular"?img2:items.tag === "new"? img3:img1} alt="" />

@@ -13,7 +13,7 @@ const CartSetcion = ({ cart ,setCart }) => {
     if(cart.length>0){
 
       setCart(cart.filter((item)=> item.name === id ))
-      toast.success("oder placed successfull")
+      toast.success("You oder has been placed ")
       return
     }
     toast.warning("add item to cart first")
@@ -23,15 +23,15 @@ const CartSetcion = ({ cart ,setCart }) => {
   
 
   return (
-    <div className="max-w-1/2 mx-auto shadow-2xl p-10 space-y-5">
+    <div className=" mx-auto  shadow-2xl p-10 space-y-5">
 {     cart.length!==0? <Carts cart={cart} setCart={setCart} totalFilter={totalFilter}></Carts>: <div>
     <h2>No products in the cart </h2>
     </div>}
-      <div className="flex items-center justify-between">
+      <div className="flex  items-center justify-between">
         <h2>Total:</h2>
         <span>${total} </span>
       </div>
-      <button onClick={()=>{checkout(cart.name)}} className="btn w-full rounded-full text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Proceed to Checkout</button>
+      <button onClick={()=>{checkout(cart.name)}} className="btn w-full rounded-full text-[12px] text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Proceed to Checkout</button>
     </div>
   );
 };

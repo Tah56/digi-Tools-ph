@@ -4,7 +4,7 @@ import React from "react";
 const Navbar = ({cart}) => {
   return (
     <div className="">
-      <div className="navbar bg-base-100 shadow-sm   px-20 ">
+      <div className="navbar bg-base-100 shadow-sm  ">
         <div className="navbar-start ">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -61,7 +61,7 @@ const Navbar = ({cart}) => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end space-x-5 ">
+        <div className="navbar-end space-x-5 hidden sm:flex ">
 
             <div className="relative">
                 <ShoppingCartIcon></ShoppingCartIcon>

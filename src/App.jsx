@@ -9,6 +9,7 @@ import { useState } from 'react'
 import GetStarted from './Components/GetStarted/GetStarted'
 import TransparentPricing from './Components/TransparentPricing/TransparentPricing'
 import ReadySection from './Components/RedaySection/ReadySection'
+import FooterSection from './Components/FooterStection/FooterSection'
 
 function App() {
      const [cart,setCart]=useState([])
@@ -23,6 +24,7 @@ function App() {
       <GetStarted></GetStarted>
       <TransparentPricing></TransparentPricing>
       <ReadySection></ReadySection>
+      <FooterSection></FooterSection>
       <ToastContainer transition={Slide}></ToastContainer>
     </>
   )

@@ -8,13 +8,13 @@ const GetStarted = () => {
     <div className="bg-[#F9FAFC] py-32">
       <div className="space-y-10">
         <div className="  flex flex-col items-center justify-center gap-5">
-          <h2 className="font-extrabold text-5xl">Get Started In 3 Steps</h2>
+          <h2 className="font-extrabold text-3xl lg:text-5xl">Get Started In 3 Steps</h2>
           <p className="text-[#627382]">Start using premium digital tools in minutes, not hours.</p>
         </div>
 
-        <div className="flex items-center justify-center gap-8">
+        <div className=" flex flex-col lg:flex-row items-center justify-center gap-8">
           <div>
-            <div className="card bg-base-100 w-96 shadow-sm py-10">
+            <div className="card bg-base-100 shadow-sm py-10">
                 <div className=" bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white w-10 h-10 rounded-full flex items-center justify-center ml-auto mr-5">
               <h2 className="text-right">01</h2>
 
@@ -35,7 +35,7 @@ const GetStarted = () => {
           </div>
 
           <div>
-            <div className="card bg-base-100 w-96 shadow-sm py-10">
+            <div className="card bg-base-100  shadow-sm py-10">
               <div className=" bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white w-10 h-10 rounded-full flex items-center justify-center ml-auto mr-5">
               <h2 className="text-right">02</h2>
 
@@ -54,7 +54,7 @@ const GetStarted = () => {
             </div>
           </div>
           <div>
-            <div className="card bg-base-100 w-96 shadow-sm py-10">
+            <div className="card bg-base-100  shadow-sm py-10">
              <div className=" bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white w-10 h-10 rounded-full flex items-center justify-center ml-auto mr-5">
               <h2 className="text-right">03</h2>
 
