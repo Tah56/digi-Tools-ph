@@ -6,6 +6,7 @@ import Premium from './Components/PremiumSection/Premium'
 import HeroSection from './Components/HeroSection/HeroSection'
 import RatingSection from './Components/Rating/RatingSection'
 import { useState } from 'react'
+import GetStarted from './Components/GetStarted/GetStarted'
 
 function App() {
      const [cart,setCart]=useState([])
@@ -17,6 +18,7 @@ function App() {
       <HeroSection></HeroSection>
       <RatingSection></RatingSection>
       <Premium cart={cart} setCart={setCart}></Premium>
+      <GetStarted></GetStarted>
       <ToastContainer transition={Slide}></ToastContainer>
     </>
   )

@@ -65,7 +65,7 @@ const Navbar = ({cart}) => {
 
             <div className="relative">
                 <ShoppingCartIcon></ShoppingCartIcon>
-                <span className="absolute -top-3 left-1/2 font-bold text-red-400">{cart.length}</span>
+                <span className="absolute -top-3 left-1/2 font-bold text-red-400">{cart.length===0?'':cart.length}</span>
             </div>
             <button className="btn btn-ghost "> Login</button>
           <a className="btn rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white font-semibold ">Get Started</a>
